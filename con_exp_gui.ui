@@ -1,0 +1,1494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1082</width>
+    <height>847</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLabel" name="lb_login_msg">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>241</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>lb_login_msg</string>
+    </property>
+   </widget>
+   <widget class="QTabWidget" name="tabWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>1051</width>
+      <height>541</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>1</number>
+    </property>
+    <widget class="QWidget" name="">
+     <attribute name="title">
+      <string>메인</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>50</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram Bot Token</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_telegram_bot_token">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>50</y>
+        <width>341</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>80</y>
+        <width>121</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram ID</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_telegram_id">
+      <property name="geometry">
+       <rect>
+        <x>130</x>
+        <y>80</y>
+        <width>341</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_2">
+     <attribute name="title">
+      <string>조건식1</string>
+     </attribute>
+     <widget class="QTableWidget" name="tw_con_exp_1">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>202</width>
+        <height>491</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed</set>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>종목</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>코드</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QPushButton" name="pb_con_exp_start_1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START / STOP</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_cycle_1">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>60</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>60</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>60</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>주기(분)</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_telegram_1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>90</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_chart_1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>110</y>
+        <width>171</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram send Chart</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_name_1">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>20</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>조건식1</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_overlap_1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>130</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>중복 제거</string>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_con_exp_chart_save_1">
+      <property name="geometry">
+       <rect>
+        <x>700</x>
+        <y>130</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Day Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Week Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 Month Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Year Chart</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_photo_1">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>160</y>
+        <width>700</width>
+        <height>291</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string/>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value0_1">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>50</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>250 최고</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_stock_name_1">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>133</y>
+        <width>261</width>
+        <height>21</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>행운가득</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>종목명</string>
+      </property>
+     </widget>
+     <widget class="Line" name="line">
+      <property name="geometry">
+       <rect>
+        <x>390</x>
+        <y>40</y>
+        <width>20</width>
+        <height>111</height>
+       </rect>
+      </property>
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value1_1">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>70</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>250 최저</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value2_1">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>90</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>시가총액</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value3_1">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>110</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>PER</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value4_1">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>50</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>매출액</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value5_1">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>70</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>영업이익</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value6_1">
+      <property name="geometry">
+       <rect>
+        <x>630</x>
+        <y>90</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>당기순이익</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value7_1">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>50</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>시가</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value0_1">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>47</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value1_1">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>67</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value2_1">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>87</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value3_1">
+      <property name="geometry">
+       <rect>
+        <x>490</x>
+        <y>107</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value4_1">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>47</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value5_1">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>67</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value6_1">
+      <property name="geometry">
+       <rect>
+        <x>710</x>
+        <y>87</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value8_1">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>70</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>고가</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value9_1">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>90</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>저가</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value10_1">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>160</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>현재가</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value11_1">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>180</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>전일대비</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value12_1">
+      <property name="geometry">
+       <rect>
+        <x>970</x>
+        <y>200</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>등락률</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_value13_1">
+      <property name="geometry">
+       <rect>
+        <x>850</x>
+        <y>110</y>
+        <width>101</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>거래량</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value8_1">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>67</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value7_1">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>47</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value9_1">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>87</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_value13_1">
+      <property name="geometry">
+       <rect>
+        <x>910</x>
+        <y>107</y>
+        <width>113</width>
+        <height>20</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_now_1">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>450</y>
+        <width>91</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>행운가득</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>현재가</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_yest_1">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>450</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>행운가득</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>전일대비</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_rate_1">
+      <property name="geometry">
+       <rect>
+        <x>730</x>
+        <y>450</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="font">
+       <font>
+        <family>행운가득</family>
+        <pointsize>15</pointsize>
+        <weight>50</weight>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>등락률</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_8">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>451</y>
+        <width>71</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>행운가득</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>현재가 : </string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_9">
+      <property name="geometry">
+       <rect>
+        <x>420</x>
+        <y>450</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>행운가득</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>전일대비 :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_10">
+      <property name="geometry">
+       <rect>
+        <x>640</x>
+        <y>450</y>
+        <width>81</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>행운가득</family>
+        <pointsize>15</pointsize>
+       </font>
+      </property>
+      <property name="text">
+       <string>등락률 :</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab">
+     <attribute name="title">
+      <string>조건식2</string>
+     </attribute>
+     <widget class="QCheckBox" name="cb_con_exp_chart_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>110</y>
+        <width>251</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram send Chart</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_name_2">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>20</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>조건식2</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_con_exp_start_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START / STOP</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_4">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>60</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>주기(분)</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_telegram_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>90</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_cycle_2">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>60</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>60</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_overlap_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>130</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>중복 제거</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tw_con_exp_2">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>202</width>
+        <height>445</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed</set>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>종목</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>코드</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QGraphicsView" name="gv_con_exp_photo_2">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>160</y>
+        <width>351</width>
+        <height>291</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_con_exp_chart_save_2">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>120</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Day Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Week Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 Month Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Year Chart</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_3">
+     <attribute name="title">
+      <string>조건식3</string>
+     </attribute>
+     <widget class="QCheckBox" name="cb_con_exp_chart_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>110</y>
+        <width>181</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram send Chart</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_name_3">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>20</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>조건식3</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_con_exp_start_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START / STOP</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_5">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>60</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>주기(분)</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_telegram_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>90</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_cycle_3">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>60</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>60</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_overlap_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>130</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>중복 제거</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tw_con_exp_3">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>202</width>
+        <height>445</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed</set>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>종목</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>코드</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QGraphicsView" name="gv_con_exp_photo_3">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>160</y>
+        <width>351</width>
+        <height>291</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_con_exp_chart_save_3">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>120</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Day Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Week Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 Month Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Year Chart</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_4">
+     <attribute name="title">
+      <string>조건식4</string>
+     </attribute>
+     <widget class="QCheckBox" name="cb_con_exp_chart_4">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>110</y>
+        <width>191</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram send Chart</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_name_4">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>20</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>조건식4</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_con_exp_start_4">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START / STOP</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_6">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>60</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>주기(분)</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_telegram_4">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>90</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_cycle_4">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>60</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>60</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_overlap_4">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>130</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>중복 제거</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tw_con_exp_4">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>202</width>
+        <height>445</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed</set>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>종목</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>코드</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QGraphicsView" name="gv_con_exp_photo_4">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>160</y>
+        <width>351</width>
+        <height>291</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_con_exp_chart_save_4">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>120</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Day Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Week Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 Month Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Year Chart</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="tab_5">
+     <attribute name="title">
+      <string>조건식5</string>
+     </attribute>
+     <widget class="QCheckBox" name="cb_con_exp_chart_5">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>110</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram send Chart</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="lb_con_exp_name_5">
+      <property name="geometry">
+       <rect>
+        <x>370</x>
+        <y>20</y>
+        <width>151</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="sizePolicy">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+        <horstretch>0</horstretch>
+        <verstretch>0</verstretch>
+       </sizepolicy>
+      </property>
+      <property name="text">
+       <string>조건식5</string>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="pb_con_exp_start_5">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>10</y>
+        <width>121</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>START / STOP</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_7">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>60</y>
+        <width>56</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>주기(분)</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_telegram_5">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>90</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Telegram</string>
+      </property>
+     </widget>
+     <widget class="QLineEdit" name="le_con_exp_cycle_5">
+      <property name="geometry">
+       <rect>
+        <x>310</x>
+        <y>60</y>
+        <width>51</width>
+        <height>20</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>60</string>
+      </property>
+     </widget>
+     <widget class="QCheckBox" name="cb_con_exp_overlap_5">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>130</y>
+        <width>121</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>중복 제거</string>
+      </property>
+     </widget>
+     <widget class="QTableWidget" name="tw_con_exp_5">
+      <property name="geometry">
+       <rect>
+        <x>20</x>
+        <y>10</y>
+        <width>202</width>
+        <height>445</height>
+       </rect>
+      </property>
+      <property name="editTriggers">
+       <set>QAbstractItemView::AnyKeyPressed|QAbstractItemView::EditKeyPressed</set>
+      </property>
+      <attribute name="verticalHeaderVisible">
+       <bool>false</bool>
+      </attribute>
+      <column>
+       <property name="text">
+        <string>종목</string>
+       </property>
+      </column>
+      <column>
+       <property name="text">
+        <string>코드</string>
+       </property>
+      </column>
+     </widget>
+     <widget class="QGraphicsView" name="gv_con_exp_photo_5">
+      <property name="geometry">
+       <rect>
+        <x>240</x>
+        <y>160</y>
+        <width>351</width>
+        <height>291</height>
+       </rect>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="cb_con_exp_chart_save_5">
+      <property name="geometry">
+       <rect>
+        <x>460</x>
+        <y>120</y>
+        <width>131</width>
+        <height>22</height>
+       </rect>
+      </property>
+      <item>
+       <property name="text">
+        <string>Day Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Week Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>3 Month Chart</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Year Chart</string>
+       </property>
+      </item>
+     </widget>
+    </widget>
+   </widget>
+   <widget class="QTextEdit" name="te_system_msg">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>580</y>
+      <width>1051</width>
+      <height>221</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::WinPanel</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_con_exp_value">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>10</y>
+      <width>151</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>-</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="lb_con_exp_name_7">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>10</y>
+      <width>71</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="sizePolicy">
+     <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+      <horstretch>0</horstretch>
+      <verstretch>0</verstretch>
+     </sizepolicy>
+    </property>
+    <property name="text">
+     <string>조건식 수 :</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1082</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
